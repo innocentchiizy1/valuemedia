@@ -370,4 +370,14 @@ header {
     .platform-left {
         margin-right: 0;
     }
+
+    .faqs-container {
+        grid-template-columns: 1fr;
+    }
+
+    .faq {
+        padding: 1.5rem;
+
+    }
+
 }
