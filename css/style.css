@@ -206,6 +206,9 @@ header {
     cursor: pointer;
 }
 
+.buses {
+    margin-top: 10rem;
+}
 
 .faqs {
     background: rgb(166, 162, 162);
@@ -342,5 +345,29 @@ header {
     .nav-menu li a:hover {
         background: white;
         color: red;
+    }
+
+    header {
+        height: 52vh;
+        margin-bottom: 4rem;
+    }
+
+    .header-container {
+        gap: 0;
+        padding-bottom: 3rem;
+    }
+
+    platforms {
+        height: aut;
+    }
+
+    .platform-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+
+    }
+
+    .platform-left {
+        margin-right: 0;
     }
 }
