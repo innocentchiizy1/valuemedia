@@ -11,7 +11,7 @@
 }
 
 .team-member {
-    background: red;
+    background: white;
     padding: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -44,7 +44,7 @@
 }
 
 .team-member-info {
-    color: white;
+    color: black;
 }
 
 .team-member-socials {
@@ -89,7 +89,7 @@
 
 @media screen and (max-width: 600px) {
     .team-container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 0.7rem;
     }
 
