@@ -1,5 +1,5 @@
 .contact-container {
-    background: red;
+    background: rgb(137, 132, 132);
     padding: 4rem;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -10,7 +10,7 @@
 }
 
 .contact-aside {
-    background: green;
+    background: rgb(184, 190, 184);
     padding: 3rem;
     border-radius: 1rem;
     position: relative;
@@ -46,7 +46,7 @@
 }
 
 .contact-socials a {
-    background: pink;
+    background: white;
     padding: 0.5rem;
     border-radius: 50%;
     font-size: 0.9rem;
@@ -54,7 +54,8 @@
 }
 
 .contact-socials a:hover {
-    background: purple;
+    background: red;
+    color: white;
 }
 
 .contact-form {
@@ -78,8 +79,8 @@ input,
 textarea {
     width: 100%;
     padding: 1rem;
-    background: orange;
-    color: white;
+    background: white;
+    color: black;
 }
 
 .contact-form .btn {
