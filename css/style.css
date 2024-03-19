@@ -199,7 +199,7 @@ img:nth-of-type(3) {
 
 header {
     position: relative;
-    top: 5rem;
+    top: -10rem;
     overflow: hidden;
     height: 70vh;
     margin-bottom: 5rem;
