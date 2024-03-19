@@ -484,6 +484,10 @@ footer ul li a:hover {
 
     }
 
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 @media screen and (max-width:600px) {
@@ -523,5 +527,20 @@ footer ul li a:hover {
     .platform-icon {
         margin-top: 4px;
         display: inline-block;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-1 p {
+        margin: 1rem auto;
+
+    }
+
+    .footer-socials {
+        justify-content: center;
     }
 }
