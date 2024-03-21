@@ -763,6 +763,11 @@ footer ul li a:hover {
 
 @media screen and (max-width:600px) {
 
+    section {
+        padding: 6rem 0;
+    }
+    
+
     .container {
         width: var(--container-width-sm);
     }
