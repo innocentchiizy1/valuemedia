@@ -27,16 +27,18 @@ body {
     margin: 0 auto;
 }
 
-section {
+/* section {
     padding: 6rem 0;
-}
+} */
+
+
 
 section h2 {
     text-align: center;
-    margin-bottom: 6rem;
+    /* margin-bottom: 6rem; */
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -62,7 +64,7 @@ h4 {
 
 h5 {
     font-size: 1rem;
-}
+} */
 
 a {
     color: red;
@@ -267,8 +269,9 @@ img:nth-of-type(3) {
 
 
 header {
+    background: transparent;
     position: relative;
-    top: -10rem;
+    top: -5rem;
     overflow: hidden;
     height: 70vh;
     margin-bottom: 5rem;
@@ -288,7 +291,7 @@ header {
     width: 20rem;
     height: 3.5rem;
     margin-bottom: 2rem;
-    margin-top: 10rem;
+    margin-top: 8rem;
     text-align: center;
     border-radius: 20px;
     border: red 1px solid;
@@ -298,8 +301,77 @@ header {
     margin: 1rem 0 2.4rem;
 }
 
+.media {
+    background: transparent;
+}
 
-.platforms {
+.media-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-left: 30px;
+
+}
+
+.media-box .iconn {
+    color: red;
+    font-size: 3rem;
+    margin: 2px;
+
+}
+
+.media-box h6 {
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.media-box p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.our-buses {
+    text-align: center;
+}
+
+.our-buses h3 {
+    color: red;
+}
+
+.our-buses p {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.bus img {
+    border-radius: 20px;
+}
+
+.bus-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 20px;
+    border-radius: 20px;
+
+}
+
+.btn-primaryy {
+    background: transparent;
+    color: red;
+    border: 1px solid red;
+    border-radius: 20px;
+    font-size: 10px;
+    margin: 2rem;
+}
+
+.btn-primaryy:hover {
+    background: red;
+    color: black;
+}
+
+S .platforms {
     background: rgb(255, 255, 255);
     /* height: 29rem; */
 
@@ -307,7 +379,7 @@ header {
 
 .platforms h1 {
     line-height: 1;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .platform-container {
@@ -317,7 +389,8 @@ header {
 }
 
 .platform-left p {
-    margin: 4rem;
+    margin: 2rem;
+
 
 }
 
@@ -335,7 +408,7 @@ header {
 
 .platform {
     background: rgb(236, 240, 236);
-    padding: 2rem;
+    padding: rem;
     border-radius: 2rem;
     transition: var(--transition);
 }
@@ -345,6 +418,121 @@ header {
     box-sizing: 3rem;
     cursor: pointer;
 }
+
+.service-wrapper {
+    padding: 5% 8%;
+
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service h1 {
+    color: green;
+    font-size: 3rem;
+    position: relative;
+    letter-spacing: 4px;
+}
+
+.service h1:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8px;
+    width: 80%;
+    border-radius: 8px;
+    background-color: yellow;
+}
+
+h1 span {
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: green;
+    animation: anim 5s linear infinite;
+}
+
+@keyframes anim {
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        left: 90%;
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.card {
+    height: 350px;
+    width: 370px;
+    background-color: purple;
+    padding: 3% 8%;
+    border: 0.2px solid rgba(114, 226, 174, 0.2);
+    border-radius: 8px;
+    transition: .6s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card i{
+    color: red;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+.card h2{
+    color: black;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
