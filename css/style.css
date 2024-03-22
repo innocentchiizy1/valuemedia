@@ -19,7 +19,7 @@ body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.7;
     color: black;
-    background: #e6dfdf;
+    background: #f6f2f2;
 }
 
 .container {
@@ -27,9 +27,9 @@ body {
     margin: 0 auto;
 }
 
-/* section {
-    padding: 6rem 0;
-} */
+section {
+    margin: 2rem 0;
+}
 
 
 
@@ -431,8 +431,8 @@ S .platforms {
 }
 
 .service h1 {
-    color: green;
-    font-size: 3rem;
+    color: red;
+    font-size: 2rem;
     position: relative;
     letter-spacing: 4px;
 }
@@ -480,33 +480,86 @@ h1 span {
 .card {
     height: 350px;
     width: 370px;
-    background-color: purple;
+    background-color: transparent;
     padding: 3% 8%;
-    border: 0.2px solid rgba(114, 226, 174, 0.2);
+    border: 0.2px solid red;
     border-radius: 8px;
     transition: .6s;
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
 }
 
-.card i{
+.card:after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: -200%;
+    width: 120%;
+    transform: rotate(50deg);
+    background-color: orange;
+    height: 18px;
+    filter: blur(30px);
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.card:hover:after {
+    width: 225%;
+    top: -100%;
+}
+
+.card i {
     color: red;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 2rem;
 }
-.card h2{
+
+.card h2 {
     color: black;
     font-size: 20px;
     letter-spacing: 1px;
 }
 
 
+.card p {
+    color: gold;
+    text-align: center;
+    margin: 12px 0;
+
+}
+
+.card:hover {
+    background-color: yellow;
+    transform: translateY(-8px);
+    border-color: purple;
+}
+
+.card:hover i {
+    color: green;
+}
 
 
+@media screen and (max-width:1200px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
+@media screen and (max-width:900px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
 
+    }
+
+    .service h1 {
+        font-size: 2rem;
+    }
+}
 
 
 
@@ -561,6 +614,11 @@ h1 span {
 .faq h4 {
     font-size: 1rem;
     line-height: 2.2;
+}
+
+.faqs h2 {
+    padding: 2rem;
+    margin-bottom: 3rem;
 }
 
 .faq-icon {
@@ -766,7 +824,7 @@ footer ul li a:hover {
     section {
         padding: 6rem 0;
     }
-    
+
 
     .container {
         width: var(--container-width-sm);

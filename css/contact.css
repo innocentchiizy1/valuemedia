@@ -52,8 +52,8 @@
 .contact-socials a {
     background: white;
     padding: 0.5rem;
-    border-radius: 50%;
-    font-size: 0.9rem;
+    border-radius: 40%;
+    font-size: 1.2rem;
     transition: var(--transition);
 }
 
@@ -139,3 +139,4 @@ textarea {
         width: 100%;
     }
 }
+
